@@ -1,0 +1,20 @@
+# ビルドアーティファクト
+target/
+bin/
+
+# 環境変数 (コミット禁止)
+.env
+
+# IDE設定ファイル
+.idea/
+*.iml
+.project
+.classpath
+.settings/
+
+# OS設定ファイル
+.DS_Store
+Thumbs.db
+
+# ログ
+*.log

@@ -1,0 +1,71 @@
+/**
+ * 共通スタイル
+ */
+
+/* 背景グラデーション */
+body.bg-gradient-primary {
+	background: radial-gradient(circle at top, rgba(13, 110, 253, 0.08),
+		transparent 45%), #f8f9fa;
+}
+
+/* テキスト折り返し */
+.text-prewrap {
+	white-space: pre-line;
+}
+
+/* 固定戻るボタン */
+.fixed-back-button {
+	position: fixed;
+	top: 20px;
+	left: 20px;
+	z-index: 1000;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+/**
+ * 投稿フォーム用スタイル (new.jsp / edit.jsp)
+ */
+
+/* 試験項目カード */
+.exam-item-card {
+	transition: box-shadow 0.2s;
+}
+
+.exam-item-card:hover {
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 詳細選択肢アイテム */
+.detail-option-item {
+	cursor: pointer;
+	transition: background-color 0.2s;
+}
+
+.detail-option-item:hover {
+	background-color: #f8f9fa;
+}
+
+.detail-option-item.selected {
+	background-color: #e7f3ff;
+	border-color: #0d6efd;
+}
+
+/**
+ * ユーザー管理画面用スタイル (user_list.jsp)
+ */
+
+/* 検索ヒーローセクション */
+.search-hero {
+	max-width: 640px;
+	margin-inline: auto;
+}
+
+/* ユーザーカード */
+.user-card {
+	transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.user-card:hover {
+	transform: translateY(-4px);
+	box-shadow: 0 1rem 3rem rgba(13, 15, 25, 0.12);
+}
